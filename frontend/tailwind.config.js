@@ -1,0 +1,75 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        sunset: {
+          50: '#fff7ed',
+          100: '#ffedd5',
+          200: '#fed7aa',
+          300: '#fdba74',
+          400: '#fb923c',
+          500: '#FF6B1A',
+          600: '#ea580c',
+          700: '#c2410c',
+          800: '#9a3412',
+          900: '#7c2d12',
+          950: '#431407',
+        },
+        ocean: {
+          50: '#f0f9ff',
+          100: '#e0f2fe',
+          200: '#bae6fd',
+          300: '#7dd3fc',
+          400: '#38bdf8',
+          500: '#0ea5e9',
+          600: '#0284C7',
+          700: '#0369a1',
+          800: '#075985',
+          900: '#0c4a6e',
+          950: '#082f49',
+        },
+        sand: {
+          50: '#fefce8',
+          100: '#fef9c3',
+          200: '#fef08a',
+          300: '#fde047',
+          400: '#FACC15',
+          500: '#eab308',
+          600: '#ca8a04',
+          700: '#a16207',
+          800: '#854d0e',
+          900: '#713f12',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['"Playfair Display"', 'Georgia', 'serif'],
+      },
+      borderRadius: {
+        '2xl': '16px',
+        '3xl': '24px',
+        '4xl': '32px',
+      },
+      boxShadow: {
+        'card': '0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04)',
+        'card-hover': '0 8px 24px rgba(0,0,0,0.1), 0 16px 40px rgba(0,0,0,0.06)',
+        'glass': '0 8px 32px rgba(0,0,0,0.12)',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.6s ease-out forwards',
+        'slide-up': 'slideUp 0.6s ease-out forwards',
+        'slide-down': 'slideDown 0.35s ease-out forwards',
+        'scale-in': 'scaleIn 0.35s ease-out forwards',
+        'float': 'float 6s ease-in-out infinite',
+        'pulse-soft': 'pulseSoft 2s ease-in-out infinite',
+      },
+    },
+  },
+  plugins: [],
+};
